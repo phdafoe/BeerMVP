@@ -1,0 +1,6 @@
+framework module Pods_BeerMVP {
+  umbrella header "Pods-BeerMVP-umbrella.h"
+
+  export *
+  module * { export * }
+}

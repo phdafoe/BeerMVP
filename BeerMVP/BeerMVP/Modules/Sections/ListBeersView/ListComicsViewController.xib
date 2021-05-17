@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListComicsViewController" customModule="EntelgyMarvel" customModuleProvider="target">
+            <connections>
+                <outlet property="myTableView" destination="Edf-3s-fHj" id="NmO-dK-BnZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Edf-3s-fHj">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.10419365279999999" green="0.10419365279999999" blue="0.10419365279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.17007367230000001" green="0.17007367230000001" blue="0.17007367230000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Edf-3s-fHj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="1XJ-14-eFg"/>
+                <constraint firstItem="Edf-3s-fHj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ORp-wA-Suo"/>
+                <constraint firstAttribute="bottom" secondItem="Edf-3s-fHj" secondAttribute="bottom" id="RHf-a0-r31"/>
+                <constraint firstAttribute="trailing" secondItem="Edf-3s-fHj" secondAttribute="trailing" id="y35-Lv-HBq"/>
+            </constraints>
+            <point key="canvasLocation" x="-162" y="129"/>
+        </view>
+    </objects>
+</document>
