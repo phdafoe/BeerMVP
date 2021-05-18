@@ -16,5 +16,5 @@ class BeerViewCellDrawer {
         }
         return cell
     }
-    
+
 }

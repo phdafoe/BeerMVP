@@ -13,7 +13,7 @@ class BeerTableViewCell: BaseTableViewCell<BeerViewModel>, ReuseIdentifierProtoc
     @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet weak var myNameLBL: UILabel!
     var model: BeerViewModel?
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -22,7 +22,7 @@ class BeerTableViewCell: BaseTableViewCell<BeerViewModel>, ReuseIdentifierProtoc
         super.setSelected(selected, animated: animated)
 
     }
-    
+
     override func configure(cellModel: BeerViewModel) {
         super.configure(cellModel: cellModel)
         self.model = cellModel

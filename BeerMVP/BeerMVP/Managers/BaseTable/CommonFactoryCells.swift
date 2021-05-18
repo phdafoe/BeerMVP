@@ -8,11 +8,11 @@
 import UIKit
 
 class CommonFactoryCells: NSObject {
-    
+
     class func view(for object: Any?, tableView: UITableView, presenter: Any? = nil) -> UIView {
         return self.cell(for: object, tableView: tableView, presenter: presenter).contentView
     }
-    
+
     class func cell(for object: Any?, tableView: UITableView, presenter: Any? = nil) -> UITableViewCell {
         switch object {
         case let model as BeerViewModel:

@@ -16,7 +16,6 @@
 		B4D0AB522652ABF900CFCDFF /* CustomErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB512652ABF900CFCDFF /* CustomErrorModel.swift */; };
 		B4D0AB542652ABF900CFCDFF /* BaseProviderUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB532652ABF900CFCDFF /* BaseProviderUtils.swift */; };
 		B4D0AB572652ABF900CFCDFF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB562652ABF900CFCDFF /* Utils.swift */; };
-		B4D0AB592652ABF900CFCDFF /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = B4D0AB582652ABF900CFCDFF /* swiftlint.yml */; };
 		B4D0AB5B2652ABF900CFCDFF /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB5A2652ABF900CFCDFF /* Date+Extension.swift */; };
 		B4D0AB5F2652ABF900CFCDFF /* ListComicsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB5E2652ABF900CFCDFF /* ListComicsProvider.swift */; };
 		B4D0AB622652ABF900CFCDFF /* ListComicsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB612652ABF900CFCDFF /* ListComicsCoordinator.swift */; };
@@ -49,7 +48,6 @@
 		B4D0AB512652ABF900CFCDFF /* CustomErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomErrorModel.swift; sourceTree = "<group>"; };
 		B4D0AB532652ABF900CFCDFF /* BaseProviderUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProviderUtils.swift; sourceTree = "<group>"; };
 		B4D0AB562652ABF900CFCDFF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
-		B4D0AB582652ABF900CFCDFF /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
 		B4D0AB5A2652ABF900CFCDFF /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		B4D0AB5E2652ABF900CFCDFF /* ListComicsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComicsProvider.swift; sourceTree = "<group>"; };
 		B4D0AB612652ABF900CFCDFF /* ListComicsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComicsCoordinator.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				B4D0AB562652ABF900CFCDFF /* Utils.swift */,
-				B4D0AB582652ABF900CFCDFF /* swiftlint.yml */,
 				B4D0AB5A2652ABF900CFCDFF /* Date+Extension.swift */,
 			);
 			path = Utils;
@@ -326,7 +323,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D0AB6B2652ABF900CFCDFF /* ListComicsViewController.xib in Resources */,
-				B4D0AB592652ABF900CFCDFF /* swiftlint.yml in Resources */,
 				B4D0AB762652ABFA00CFCDFF /* Assets.xcassets in Resources */,
 				B4D0AB792652ABFA00CFCDFF /* LaunchScreen.storyboard in Resources */,
 				B4D0ABA02652DA1100CFCDFF /* BeerTableViewCell.xib in Resources */,

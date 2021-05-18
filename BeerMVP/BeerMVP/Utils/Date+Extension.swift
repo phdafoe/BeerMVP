@@ -119,8 +119,8 @@ extension Date {
 		print(weekdayOrdinal)
 		guard let firstDay = Date().startOfWeek else { return [] }
 		var week: [Date] = []
-		for i in 0 ... 7 {
-			week.append(firstDay + i)
+		for index in 0 ... 7 {
+			week.append(firstDay + index)
 		}
 
 		return week
@@ -130,8 +130,8 @@ extension Date {
 		guard var firstDay = Date().startOfWeek else { return [] }
 		firstDay = firstDay.yesterday
 		var week: [Date] = []
-		for i in 0 ... 27 {
-			week.append(firstDay + i)
+		for index in 0 ... 27 {
+			week.append(firstDay + index)
 		}
 
 		return week

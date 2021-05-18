@@ -13,28 +13,28 @@ enum TableType {
 }
 
 class TableViewManager: NSObject {
-    
+
     weak var tableView: UITableView?
     weak var presenter: TablePresenterProtocol?
     var tableType = TableType.unspecified
-    
+
     init(tableType: TableType = .unspecified,
          tableView: UITableView?,
          presenter: Any?) {
         super.init()
-        
+
         self.tableType = tableType
         self.tableView = tableView
         self.presenter = presenter as? TablePresenterProtocol
         self.presenter?.tablePresenterDelegate = self
-        
+
         self.setup()
     }
-    
+
     func setup() {
         self.tableView?.delegate = self
         self.tableView?.dataSource = self
-        
+
         self.tableView?.clipsToBounds = true
         self.tableView?.separatorStyle = .none
         self.tableView?.separatorColor = UIColor.white
@@ -49,22 +49,22 @@ class TableViewManager: NSObject {
 }
 
 extension TableViewManager: UITableViewDelegate, UITableViewDataSource {
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.presenter?.numberOfCells(self.tableType, section: section) ?? 0
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return CommonFactoryCells.cell(for: self.presenter?.object(self.tableType, indexPath: indexPath), tableView: tableView, presenter: self.presenter)
     }
-    
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.presenter?.didTapRow(self.tableType, indexPath: indexPath)
     }
 }
 
 extension TableViewManager: TablePresenterDelegate {
-    
+
     func dataSourceUpdated() {
         self.tableView?.reloadData()
     }

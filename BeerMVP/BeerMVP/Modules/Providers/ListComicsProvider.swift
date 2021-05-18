@@ -8,14 +8,13 @@
 import Foundation
 
 protocol ListComicsProviderProtocol: class {
-    func fetchListBeers(completionSuccess: @escaping ([BeerServerModelElement]?) -> (), failure: @escaping(CustomErrorModel?) -> ())
+    func fetchListBeers(completionSuccess: @escaping ([BeerServerModelElement]?) -> Void, failure: @escaping(CustomErrorModel?) -> Void)
 }
 
-
 class ListComicsProvider: NativeManager, ListComicsProviderProtocol {
-    
-    internal func fetchListBeers(completionSuccess: @escaping ([BeerServerModelElement]?) -> (), failure: @escaping(CustomErrorModel?) -> ()) {
-        
+
+    internal func fetchListBeers(completionSuccess: @escaping ([BeerServerModelElement]?) -> Void, failure: @escaping(CustomErrorModel?) -> Void) {
+
         _ = self.request(CustomRequest(method: .get,
                                        urlContext: .webService,
                                        endpoint: URLEndpoint.endpointBeers,
@@ -28,5 +27,5 @@ class ListComicsProvider: NativeManager, ListComicsProviderProtocol {
             failure(error)
         }
     }
-    
+
 }

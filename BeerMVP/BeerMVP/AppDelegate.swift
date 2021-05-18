@@ -10,7 +10,6 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
     var window: UIWindow?
     var appAssembly: AppAssemblyProtocol = AppAssembly()
 
@@ -22,6 +21,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-
 }
-

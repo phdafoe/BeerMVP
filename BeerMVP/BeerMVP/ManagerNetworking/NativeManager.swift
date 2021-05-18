@@ -11,7 +11,7 @@ protocol RequestManager {
 }
 
 class NativeManager: RequestManager {
-	
+
     var requestHttpHeaders = RestEntity()
     var urlQueryParameters = RestEntity()
     var httpBodyParameters = RestEntity()
@@ -45,14 +45,13 @@ class NativeManager: RequestManager {
 			return nil
 		}
 
-
 		let sessionConfiguration = URLSessionConfiguration.default
 		let session = URLSession(configuration: sessionConfiguration)
         BaseProviderUtils.printRequest(customRequest)
 		let task = session.dataTask(with: request) { data, response, error in
             if error == nil {
                 if let httpResponse = response as? HTTPURLResponse {
-                    if (200 ..< 300).contains(httpResponse.statusCode){
+                    if (200 ..< 300).contains(httpResponse.statusCode) {
                         if let dataDes = data {
                             do {
                                 let decodeResponse = try JSONDecoder().decode(D.self, from: dataDes)
@@ -75,11 +74,10 @@ class NativeManager: RequestManager {
 		return task
 	}
 
-	
 }
 
 extension NativeManager {
-    
+
     private func addURLQueryParameters(toURL url: URL) -> URL {
         if urlQueryParameters.totalItems() > 0 {
             guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else { return url }

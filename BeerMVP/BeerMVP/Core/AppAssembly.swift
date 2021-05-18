@@ -1,4 +1,3 @@
-
 //  AppAssembly.swift
 //  Architecture MVP
 //
@@ -13,30 +12,30 @@ protocol AppAssemblyProtocol: class {
 }
 
 final class AppAssembly: AppAssemblyProtocol {
-    
+
     private (set) var actualViewController: UIViewController!
-    
+
     internal func applicationShowInitVC(_ window: UIWindow) {
         self.customUI()
         actualViewController = ListComicsAssembly.buildNavigation()
         window.rootViewController = actualViewController
         window.makeKeyAndVisible()
     }
-    
-    fileprivate func customUI(){
+
+    fileprivate func customUI() {
         let navBar = UINavigationBar.appearance()
         let tabBar = UITabBar.appearance()
         let toolBar = UIToolbar.appearance()
-        
-        navBar.barTintColor = Helpers.Colores().GRAY_NAV
-        tabBar.barTintColor = Helpers.Colores().GRAY_NAV
-        
-        toolBar.barTintColor = Helpers.Colores().GRAY_NAV
-        toolBar.tintColor = Helpers.Colores().GRAY_NAV
-        
-        navBar.tintColor = Helpers.Colores().BLANCO_TEXTO_NAV
-        tabBar.tintColor = Helpers.Colores().RED_ICON
-        
-        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor :  Helpers.Colores().BLANCO_TEXTO_NAV]
+
+        navBar.barTintColor = Helpers.Colores().grayNav
+        tabBar.barTintColor = Helpers.Colores().grayNav
+
+        toolBar.barTintColor = Helpers.Colores().grayNav
+        toolBar.tintColor = Helpers.Colores().grayNav
+
+        navBar.tintColor = Helpers.Colores().blancoTextoNav
+        tabBar.tintColor = Helpers.Colores().redIcon
+
+        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: Helpers.Colores().blancoTextoNav]
     }
 }

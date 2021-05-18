@@ -11,11 +11,11 @@ struct BeerViewModel {
     let imageurl: String
     let name: String
     let tagline: String
-    
+
     init(viewModel: BeerServerModelElement) {
         self.imageurl = viewModel.imageurl
         self.name = viewModel.name
         self.tagline = viewModel.tagline
     }
-    
+
 }
