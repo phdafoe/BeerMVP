@@ -20,7 +20,7 @@ class ListComicsViewController: BaseViewController<ListComicsPresenterProtocolOu
         super.viewDidLoad()
         self.title = "Beers"
         self.tableViewManager = TableViewManager(tableView: self.myTableView, presenter: self.presenter)
-        self.presenter?.loadComics()
+        self.presenter?.loadBeers()
     }
 
 }

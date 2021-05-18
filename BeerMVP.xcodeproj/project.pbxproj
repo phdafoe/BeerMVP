@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		78471245E92E86B6951FBC0C /* Pods_BeerMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 535B8F83FCA44E8130A51381 /* Pods_BeerMVP.framework */; };
+		B47D7B362653D6C00042C51D /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B47D7B342653D6C00042C51D /* HomeTabBarViewController.xib */; };
+		B47D7B372653D6C00042C51D /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D7B352653D6C00042C51D /* HomeTabBarViewController.swift */; };
+		B47D7B3E2653D8220042C51D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D7B3C2653D8220042C51D /* SearchViewController.swift */; };
+		B47D7B3F2653D8220042C51D /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B47D7B3D2653D8220042C51D /* SearchViewController.xib */; };
+		B47D7B432653D84F0042C51D /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D7B422653D84F0042C51D /* SearchPresenter.swift */; };
+		B47D7B462653D8620042C51D /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D7B452653D8620042C51D /* SearchRouter.swift */; };
+		B47D7B492653D9860042C51D /* SearchCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D7B482653D9860042C51D /* SearchCoordinator.swift */; };
+		B47D7B4C2653DA030042C51D /* SearchProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D7B4B2653DA030042C51D /* SearchProvider.swift */; };
+		B47D7B65265400F10042C51D /* SearchViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47D7B63265400F10042C51D /* SearchViewCell.swift */; };
+		B47D7B66265400F10042C51D /* SearchViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B47D7B64265400F10042C51D /* SearchViewCell.xib */; };
 		B4D0AB432652ABF900CFCDFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB422652ABF900CFCDFF /* AppDelegate.swift */; };
 		B4D0AB482652ABF900CFCDFF /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB472652ABF900CFCDFF /* AppAssembly.swift */; };
 		B4D0AB4B2652ABF900CFCDFF /* BaseMVP.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB4A2652ABF900CFCDFF /* BaseMVP.swift */; };
@@ -18,7 +28,7 @@
 		B4D0AB572652ABF900CFCDFF /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB562652ABF900CFCDFF /* Utils.swift */; };
 		B4D0AB5B2652ABF900CFCDFF /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB5A2652ABF900CFCDFF /* Date+Extension.swift */; };
 		B4D0AB5F2652ABF900CFCDFF /* ListComicsProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB5E2652ABF900CFCDFF /* ListComicsProvider.swift */; };
-		B4D0AB622652ABF900CFCDFF /* ListComicsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB612652ABF900CFCDFF /* ListComicsCoordinator.swift */; };
+		B4D0AB622652ABF900CFCDFF /* ListBeersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB612652ABF900CFCDFF /* ListBeersCoordinator.swift */; };
 		B4D0AB652652ABF900CFCDFF /* BeerServerModelElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB642652ABF900CFCDFF /* BeerServerModelElement.swift */; };
 		B4D0AB692652ABF900CFCDFF /* ListComicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D0AB682652ABF900CFCDFF /* ListComicsViewController.swift */; };
 		B4D0AB6B2652ABF900CFCDFF /* ListComicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4D0AB6A2652ABF900CFCDFF /* ListComicsViewController.xib */; };
@@ -39,6 +49,16 @@
 /* Begin PBXFileReference section */
 		290915ABBDFF1CFCDC04AAA8 /* Pods-BeerMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeerMVP.release.xcconfig"; path = "Target Support Files/Pods-BeerMVP/Pods-BeerMVP.release.xcconfig"; sourceTree = "<group>"; };
 		535B8F83FCA44E8130A51381 /* Pods_BeerMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeerMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B47D7B342653D6C00042C51D /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
+		B47D7B352653D6C00042C51D /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		B47D7B3C2653D8220042C51D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B47D7B3D2653D8220042C51D /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		B47D7B422653D84F0042C51D /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		B47D7B452653D8620042C51D /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		B47D7B482653D9860042C51D /* SearchCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCoordinator.swift; sourceTree = "<group>"; };
+		B47D7B4B2653DA030042C51D /* SearchProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProvider.swift; sourceTree = "<group>"; };
+		B47D7B63265400F10042C51D /* SearchViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewCell.swift; sourceTree = "<group>"; };
+		B47D7B64265400F10042C51D /* SearchViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewCell.xib; sourceTree = "<group>"; };
 		B4D0AB3F2652ABF900CFCDFF /* BeerMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4D0AB422652ABF900CFCDFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4D0AB472652ABF900CFCDFF /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
@@ -50,7 +70,7 @@
 		B4D0AB562652ABF900CFCDFF /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B4D0AB5A2652ABF900CFCDFF /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		B4D0AB5E2652ABF900CFCDFF /* ListComicsProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComicsProvider.swift; sourceTree = "<group>"; };
-		B4D0AB612652ABF900CFCDFF /* ListComicsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComicsCoordinator.swift; sourceTree = "<group>"; };
+		B4D0AB612652ABF900CFCDFF /* ListBeersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBeersCoordinator.swift; sourceTree = "<group>"; };
 		B4D0AB642652ABF900CFCDFF /* BeerServerModelElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerServerModelElement.swift; sourceTree = "<group>"; };
 		B4D0AB682652ABF900CFCDFF /* ListComicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListComicsViewController.swift; sourceTree = "<group>"; };
 		B4D0AB6A2652ABF900CFCDFF /* ListComicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListComicsViewController.xib; sourceTree = "<group>"; };
@@ -82,6 +102,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B47D7B332653D6990042C51D /* HomeTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				B47D7B352653D6C00042C51D /* HomeTabBarViewController.swift */,
+				B47D7B342653D6C00042C51D /* HomeTabBarViewController.xib */,
+			);
+			path = HomeTabBarView;
+			sourceTree = "<group>";
+		};
+		B47D7B3B2653D7F80042C51D /* SearchBeerView */ = {
+			isa = PBXGroup;
+			children = (
+				B47D7B62265400CC0042C51D /* CellSearch */,
+				B47D7B3C2653D8220042C51D /* SearchViewController.swift */,
+				B47D7B3D2653D8220042C51D /* SearchViewController.xib */,
+				B47D7B422653D84F0042C51D /* SearchPresenter.swift */,
+				B47D7B452653D8620042C51D /* SearchRouter.swift */,
+			);
+			path = SearchBeerView;
+			sourceTree = "<group>";
+		};
+		B47D7B62265400CC0042C51D /* CellSearch */ = {
+			isa = PBXGroup;
+			children = (
+				B47D7B63265400F10042C51D /* SearchViewCell.swift */,
+				B47D7B64265400F10042C51D /* SearchViewCell.xib */,
+			);
+			path = CellSearch;
+			sourceTree = "<group>";
+		};
 		B4D0AB362652ABF900CFCDFF = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				B4D0AB5E2652ABF900CFCDFF /* ListComicsProvider.swift */,
+				B47D7B4B2653DA030042C51D /* SearchProvider.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -175,7 +226,8 @@
 		B4D0AB602652ABF900CFCDFF /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				B4D0AB612652ABF900CFCDFF /* ListComicsCoordinator.swift */,
+				B4D0AB612652ABF900CFCDFF /* ListBeersCoordinator.swift */,
+				B47D7B482653D9860042C51D /* SearchCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -191,6 +243,8 @@
 		B4D0AB662652ABF900CFCDFF /* Sections */ = {
 			isa = PBXGroup;
 			children = (
+				B47D7B3B2653D7F80042C51D /* SearchBeerView */,
+				B47D7B332653D6990042C51D /* HomeTabBarView */,
 				B4D0AB672652ABF900CFCDFF /* ListBeersView */,
 			);
 			path = Sections;
@@ -323,9 +377,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4D0AB6B2652ABF900CFCDFF /* ListComicsViewController.xib in Resources */,
+				B47D7B66265400F10042C51D /* SearchViewCell.xib in Resources */,
 				B4D0AB762652ABFA00CFCDFF /* Assets.xcassets in Resources */,
+				B47D7B3F2653D8220042C51D /* SearchViewController.xib in Resources */,
 				B4D0AB792652ABFA00CFCDFF /* LaunchScreen.storyboard in Resources */,
 				B4D0ABA02652DA1100CFCDFF /* BeerTableViewCell.xib in Resources */,
+				B47D7B362653D6C00042C51D /* HomeTabBarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,23 +435,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4D0AB622652ABF900CFCDFF /* ListComicsCoordinator.swift in Sources */,
+				B4D0AB622652ABF900CFCDFF /* ListBeersCoordinator.swift in Sources */,
 				B4D0AB522652ABF900CFCDFF /* CustomErrorModel.swift in Sources */,
 				B4D0AB542652ABF900CFCDFF /* BaseProviderUtils.swift in Sources */,
 				B4D0AB972652D9E100CFCDFF /* BaseTableProtocols.swift in Sources */,
+				B47D7B492653D9860042C51D /* SearchCoordinator.swift in Sources */,
 				B4D0AB572652ABF900CFCDFF /* Utils.swift in Sources */,
 				B4D0ABA32652DA1100CFCDFF /* BeerViewCellDrawer.swift in Sources */,
 				B4D0AB5F2652ABF900CFCDFF /* ListComicsProvider.swift in Sources */,
+				B47D7B432653D84F0042C51D /* SearchPresenter.swift in Sources */,
 				B4D0AB502652ABF900CFCDFF /* CustomRequest.swift in Sources */,
 				B4D0AB6D2652ABF900CFCDFF /* ListComicsPresenter.swift in Sources */,
 				B4D0ABA22652DA1100CFCDFF /* BeerTableViewCell.swift in Sources */,
+				B47D7B65265400F10042C51D /* SearchViewCell.swift in Sources */,
 				B4D0AB652652ABF900CFCDFF /* BeerServerModelElement.swift in Sources */,
+				B47D7B462653D8620042C51D /* SearchRouter.swift in Sources */,
+				B47D7B372653D6C00042C51D /* HomeTabBarViewController.swift in Sources */,
 				B4D0AB8D2652D8D100CFCDFF /* BeerViewModel.swift in Sources */,
 				B4D0AB482652ABF900CFCDFF /* AppAssembly.swift in Sources */,
 				B4D0AB692652ABF900CFCDFF /* ListComicsViewController.swift in Sources */,
 				B4D0AB5B2652ABF900CFCDFF /* Date+Extension.swift in Sources */,
 				B4D0AB962652D9E100CFCDFF /* BaseTableViewCell.swift in Sources */,
+				B47D7B4C2653DA030042C51D /* SearchProvider.swift in Sources */,
 				B4D0AB4E2652ABF900CFCDFF /* NativeManager.swift in Sources */,
+				B47D7B3E2653D8220042C51D /* SearchViewController.swift in Sources */,
 				B4D0AB992652D9E100CFCDFF /* TableViewManager.swift in Sources */,
 				B4D0AB6F2652ABF900CFCDFF /* ListComicsRouter.swift in Sources */,
 				B4D0AB432652ABF900CFCDFF /* AppDelegate.swift in Sources */,
@@ -549,7 +613,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.icologic.co.iOS.BeerMVP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -569,7 +633,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.icologic.co.iOS.BeerMVP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

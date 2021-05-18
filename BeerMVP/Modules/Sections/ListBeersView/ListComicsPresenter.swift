@@ -8,7 +8,7 @@
 import Foundation
 
 protocol ListComicsPresenterProtocolOutput: class {
-    func loadComics()
+    func loadBeers()
 }
 
 final class ListComicsPresenter: BasePresenter<ListComicsViewController, ListComicsRouterProtocolOutput> {
@@ -22,7 +22,7 @@ final class ListComicsPresenter: BasePresenter<ListComicsViewController, ListCom
 
 extension ListComicsPresenter: ListComicsPresenterProtocolOutput {
 
-    internal func loadComics() {
+    internal func loadBeers() {
         self.viewController?.showLoading(view: (self.viewController?.view)!, animated: true)
         self.provider.fetchListBeers { [weak self] (result) in
             guard let self = self else { return }

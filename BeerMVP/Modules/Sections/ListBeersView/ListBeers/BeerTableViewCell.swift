@@ -12,6 +12,7 @@ class BeerTableViewCell: BaseTableViewCell<BeerViewModel>, ReuseIdentifierProtoc
 
     @IBOutlet weak var myImageView: UIImageView!
     @IBOutlet weak var myNameLBL: UILabel!
+    @IBOutlet weak var myTagLiner: UILabel!
     var model: BeerViewModel?
 
     override func awakeFromNib() {
@@ -27,6 +28,7 @@ class BeerTableViewCell: BaseTableViewCell<BeerViewModel>, ReuseIdentifierProtoc
         super.configure(cellModel: cellModel)
         self.model = cellModel
         self.myNameLBL.text = cellModel.name
+        self.myTagLiner.text = cellModel.tagline
         DispatchQueue.main.async {
             self.myImageView.kf.setImage(with: ImageResource(downloadURL: URL(string: cellModel.imageurl)!),
                                          placeholder: UIImage(named: "img-loading"),

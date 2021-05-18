@@ -17,7 +17,7 @@ final class AppAssembly: AppAssemblyProtocol {
 
     internal func applicationShowInitVC(_ window: UIWindow) {
         self.customUI()
-        actualViewController = ListComicsAssembly.buildNavigation()
+        actualViewController = HomeTabBarViewController()
         window.rootViewController = actualViewController
         window.makeKeyAndVisible()
     }

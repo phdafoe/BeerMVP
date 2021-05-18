@@ -1,15 +1,17 @@
 //
-//  ListComicsCoordinator.swift
+//  ListBeersCoordinator.swift.swift
 //  PruebaMarvel
 //
 //  Created by Andres Felipe Ocampo Eljaiek
 //
 
 import Foundation
+import UIKit
 
 // MARK: - module builder
 
-final class ListComicsAssembly {
+final class ListBeersCoordinator {
+
 
     static func buildNavigation() -> BaseNavigationController {
         let navigationController = BaseNavigationController(rootViewController: buildViewController())
